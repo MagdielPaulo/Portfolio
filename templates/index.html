@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <link rel="icon" type="image/png" href="../static/img/asset-15.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-    <title>Magdiel|Portfólio</title>
+    <title>Magdiel | Portfólio</title>
 </head>
 
 <body>
@@ -361,9 +361,11 @@
                                             alt="Chrono Timer">
                                         <div class="card-body">
                                             <h5 class="card-title">Chrono Timer</h5>
-                                            <p class="card-text">Um cronômetro para gerenciar o seu tempo. No qual a lógica consiste na
+                                            <p class="card-text">Um cronômetro para gerenciar o seu tempo. No qual a
+                                                lógica consiste na
                                                 utilização de um cronômetro para dividir o trabalho em períodos de 25
-                                                minutos, separados por breves intervalos Em.: HTML | CSS | Java Script | Bootstrap |
+                                                minutos, separados por breves intervalos Em.: HTML | CSS | Java Script |
+                                                Bootstrap |
                                             </p>
                                             <div class="d-flex justify-content-center">
                                                 <a href="https://github.com/MagdielPaulo/Chrono-Timer" target='_blank'
@@ -391,6 +393,78 @@
 
             </div>
         </section>
+
+        <section class="pt-5 pb-5" id="contato">
+
+            <div class="container mb-5">
+                <h2 class='pt-3 pb-3'>Contato</h2>
+
+                <div class="row">
+
+                    <div class="col-md-5">
+                        <div class="card p-5 shadow border-0" data-anime="up">
+                            <div class="endereco">
+                                <h4><i class="bi bi-geo-alt"></i> Localização:</h4>
+                                <p>São Bernardo do Campo, SP</p>
+                            </div>
+
+                            <div class="email">
+                                <h4><i class="bi bi-envelope"></i> Email:</h4>
+                                <p>docencia.thiago@gmail.com</p>
+                            </div>
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.0602062854546!2d-46.55922744119819!3d-23.673804835210053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4307634be811%3A0xf6bad5e9058a3ead!2sAv.%20Senador%20Vergueiro%20-%20S%C3%A3o%20Bernardo%20do%20Campo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1630183618134!5m2!1spt-BR!2sbr"
+                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                class='w-100'></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 mt-5 mt-md-0">
+                        <div class="card p-5 h-100 shadow border-0" data-anime="left">
+
+                            <form class="row g-3" action='/send' method="POST">
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label">Nome:</label>
+                                    <input type="text" class="form-control" id="nome" name='nome'
+                                        placeholder='Digite seu nome' required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email" name='email'
+                                        placeholder='Digite seu email' required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="mensagem" class="form-label">Mensagem:</label>
+                                    <textarea type="text" class="form-control" id="mensagem" name='mensagem' rows="10"
+                                        placeholder="Digite sua mensagem" required></textarea>
+                                </div>
+
+
+                                <div class="col-12 d-flex justify-content-center mt-4">
+                                    <button id='btn-enviar' type="submit" class="btn btn-primary">Enviar
+                                        mensagem</button>
+
+                                    <button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status"
+                                            aria-hidden="true"></span>
+                                        Enviando...
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+                </div>
+            </div>
+
+        </sectio>
 
     </main>
 
